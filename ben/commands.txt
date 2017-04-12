@@ -1,0 +1,14 @@
+[Question 1:]
+intro_to_sql=# SELECT name FROM robots WHERE source LIKE '%Hitchhiker%';
+     name
+--------------
+ Marvin
+ Deep Thought
+(2 rows)
+
+intro_to_sql=# SELECT name FROM robots WHERE source = 'The Hitchhiker''s Guide to the Galaxy';
+     name
+--------------
+ Marvin
+ Deep Thought
+(2 rows)
