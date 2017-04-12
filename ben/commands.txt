@@ -1,4 +1,4 @@
-[Question 1:]
+[Question 1: Marvin, Deep Thought]
 intro_to_sql=# SELECT name FROM robots WHERE source = 'The Hitchhiker''s Guide to the Galaxy';
      name
 --------------
@@ -6,14 +6,14 @@ intro_to_sql=# SELECT name FROM robots WHERE source = 'The Hitchhiker''s Guide t
  Deep Thought
 (2 rows)
 
-[Question 2:]
+[Question 2: C3PO]
 intro_to_sql=# SELECT name FROM robots WHERE personality = 'anxious';
  name
 ------
  C3PO
 (1 row)
 
-[Question 3:]
+[Question 3: 7 recipes listed below]
 intro_to_sql=# SELECT name FROM recipes WHERE nut_free = true;
                    name
 -------------------------------------------
@@ -26,22 +26,68 @@ intro_to_sql=# SELECT name FROM recipes WHERE nut_free = true;
  Stout Slow Cooker Corned Beef and Veggies
 (7 rows)
 
-[Question 4:]
+[Question 4: 2]
 intro_to_sql=# SELECT COUNT(*) FROM recipes WHERE gluten_free = true AND vegetarian = false;
  count
 -------
      2
 (1 row)
 
-[Question 5:]
+[Question 5: octopus]
 intro_to_sql=# SELECT name FROM animals ORDER BY number_of_legs DESC LIMIT 1;
   name
 ---------
  octopus
 (1 row)
 
-[Question 6:]
+[Question 6: Sushi Go]
 intro_to_sql=# SELECT name FROM board_games ORDER BY mins_to_play ASC LIMIT 1;   name
 ----------
  Sushi Go
+(1 row)
+
+[Question 7: Stout Slow Cooker Corned Beef and Veggies]
+intro_to_sql=# SELECT name FROM recipes ORDER BY minutes_required DESC LIMIT 1;
+                   name
+-------------------------------------------
+ Stout Slow Cooker Corned Beef and Veggies
+(1 row)
+
+[Question 8: Marvin, Mr. Butlertron]
+intro_to_sql=# SELECT name FROM robots WHERE name LIKE 'M%';
+      name
+----------------
+ Marvin
+ Mr. Butlertron
+(2 rows)
+
+[Question 9: 3 listed below]
+intro_to_sql=# SELECT name FROM board_games WHERE min_players <= 8 AND max_players >= 8;
+          name
+------------------------
+ Arkham Horror
+ Cards Against Humanity
+ Game of Things
+(3 rows)
+
+[Question 10: octopus, duck]
+intro_to_sql=# SELECT name FROM animals WHERE swimming = true AND egg_laying = true;
+  name
+---------
+ octopus
+ duck
+(2 rows)
+
+[Question 11: octopus]
+intro_to_sql=# SELECT name FROM animals WHERE swimming = true AND egg_laying = true AND flying = false;
+  name
+---------
+ octopus
+(1 row)
+
+[Question 12: Cards Against Humanity]
+intro_to_sql=# SELECT name FROM board_games ORDER BY max_players DESC LIMIT 1;
+          name
+------------------------
+ Cards Against Humanity
 (1 row)
