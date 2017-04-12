@@ -1,14 +1,34 @@
 [Question 1:]
-intro_to_sql=# SELECT name FROM robots WHERE source LIKE '%Hitchhiker%';
-     name
---------------
- Marvin
- Deep Thought
-(2 rows)
-
 intro_to_sql=# SELECT name FROM robots WHERE source = 'The Hitchhiker''s Guide to the Galaxy';
      name
 --------------
  Marvin
  Deep Thought
 (2 rows)
+
+[Question 2:]
+intro_to_sql=# SELECT name FROM robots WHERE personality = 'anxious';
+ name
+------
+ C3PO
+(1 row)
+
+[Question 3:]
+intro_to_sql=# SELECT name FROM recipes WHERE nut_free = true;
+                   name
+-------------------------------------------
+ Butternut Squash Bake
+ Vegetarian Bibimbap
+ French Veggie Loaf
+ Quinoa and Black Beans
+ Juicy Roasted Chicken
+ Garlic Green Beans
+ Stout Slow Cooker Corned Beef and Veggies
+(7 rows)
+
+[Question 4:]
+intro_to_sql=# SELECT COUNT(*) FROM recipes WHERE gluten_free = true AND vegetarian = false;
+ count
+-------
+     2
+(1 row)
