@@ -32,3 +32,16 @@ intro_to_sql=# SELECT COUNT(*) FROM recipes WHERE gluten_free = true AND vegetar
 -------
      2
 (1 row)
+
+[Question 5:]
+intro_to_sql=# SELECT name FROM animals ORDER BY number_of_legs DESC LIMIT 1;
+  name
+---------
+ octopus
+(1 row)
+
+[Question 6:]
+intro_to_sql=# SELECT name FROM board_games ORDER BY mins_to_play ASC LIMIT 1;   name
+----------
+ Sushi Go
+(1 row)
