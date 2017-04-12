@@ -91,3 +91,5 @@ intro_to_sql=# SELECT name FROM board_games ORDER BY max_players DESC LIMIT 1;
 ------------------------
  Cards Against Humanity
 (1 row)
+
+[Done]
